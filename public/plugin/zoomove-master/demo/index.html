@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ZooMove</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:700,400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="http://milligram.github.io/css/milligram.min.css">
+	<link rel="stylesheet" href="../dist/zoomove.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="wrapper">
+		<section class="container main">
+			<div class="block">
+				<div class="row">
+					<div class="column">
+						<div class="item">
+							<figure class="zoo-item" data-zoo-scale="3" data-zoo-image="http://lorempixel.com/600/600/animals/">Loading...</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="../dist/zoomove.min.js"></script>
+	<script>
+		$('.zoo-item').ZooMove({
+			cursor: 'true'
+		});
+	</script>
+</body>
+</html>
